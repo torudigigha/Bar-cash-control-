@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gold-300: #F3E5AB;
+  --color-gold-400: #E6C27A;
+  --color-gold-500: #D4AF37;
+  --color-gold-600: #C5A028;
+  --color-gold-700: #806921;
+
+  --color-bar-950: #050505;
+  --color-bar-900: #0A0A0A;
+  --color-bar-800: #1a1a1a;
+  --color-bar-700: #292929;
+  --color-bar-600: #404040;
+}
+
+body {
+  @apply bg-bar-950 text-white font-sans antialiased;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full border border-white/5;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-white/20;
+}
+
+@utility glass-card {
+  background: rgba(26, 26, 26, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@utility label-caps {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+}
+
+@utility gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
+}
+
+@utility text-gold {
+  color: #D4AF37;
+}
+
+@utility border-gold {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+@utility custom-scrollbar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
+}

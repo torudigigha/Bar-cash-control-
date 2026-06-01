@@ -1,0 +1,6 @@
+{
+  "name": "Bar Cash Control Pro",
+  "description": "Premium Cash Flow & Inventory Management System for Nigerian Bars",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
